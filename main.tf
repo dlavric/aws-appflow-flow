@@ -100,21 +100,6 @@ resource "aws_appflow_flow" "example" {
     }
   }
 
-/*   destination_flow_config {
-    connector_type = "S3"
-    destination_connector_properties {
-      s3 {
-        bucket_name = "daniela-destination"
-
-        s3_output_format_config {
-          prefix_config {
-            prefix_type = "PATH"
-          }
-        }
-      }
-    }
-  } */
-
   destination_flow_config {
     connector_type = "S3"
 
